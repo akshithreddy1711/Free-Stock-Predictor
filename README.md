@@ -1,15 +1,21 @@
-# Free Real‑Time Stock Predictor
+# Free Real-Time Stock Predictor
 
-An end‑to‑end, zero‑cost pipeline: Alpha Vantage → SQLite → TA features → Random Forest → Streamlit dashboard. Automated with GitHub Actions.
+[![Fetch Daily Prices](https://github.com/akshithreddy1711/Free-Stock-Predictor/actions/workflows/fetch.yml/badge.svg)](https://github.com/akshithreddy1711/Free-Stock-Predictor/actions/workflows/fetch.yml)
+[![Weekly Retrain](https://github.com/akshithreddy1711/Free-Stock-Predictor/actions/workflows/retrain.yml/badge.svg)](https://github.com/akshithreddy1711/Free-Stock-Predictor/actions/workflows/retrain.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+![Python](https://img.shields.io/badge/python-3.10%2B-blue)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-Live_App-brightgreen)](https://free-stock-predictor.streamlit.app/)
 
-## Stack
-- Data: Alpha Vantage (free tier)
-- Storage: SQLite
-- Modeling: scikit‑learn (RandomForestRegressor)
-- Dashboard: Streamlit
-- CI/CD: GitHub Actions
+**Live app:** 👉 https://free-stock-predictor.streamlit.app/
+
+> **CI/CD schedule (UTC → IST):**  
+> – Fetch (data & features): Weekdays at **10:05 UTC** → **15:35 IST**  
+> – Retrain (models): Saturdays at **10:15 UTC** → **15:45 IST**
+
+---
 
 ## Quickstart
+
 ```bash
 pip install -r requirements.txt
 export ALPHAVANTAGE_API_KEY="YOUR_KEY"   # Windows: set ALPHAVANTAGE_API_KEY=YOUR_KEY
