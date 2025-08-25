@@ -6,6 +6,3 @@ __pycache__/
 *.DS_Store
 
 # Data & models (comment out if you want to version them)
-stock_data.db
-models/
-data/
